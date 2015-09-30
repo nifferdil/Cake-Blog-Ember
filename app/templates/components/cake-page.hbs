@@ -1,0 +1,9 @@
+<div class="container text-center">
+{{cake.name}} {{cake.flavor}} {{cake.frosting}}
+
+<p>
+  <img src={{cake.image}} alt={{cake.name}}>
+</p>
+
+<button {{action 'delete' cake}}>Delete</button>
+</div>

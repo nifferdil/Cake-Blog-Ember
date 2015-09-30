@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember</h2>
+<header class = "jumbotron">
+  <h1 class="text-center">Cake Blog</h1>
+  <ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">About</a></li>
+    <li role="presentation"><a href="#">Contact Us</a></li>
+  </ul>
+</header>
 
-{{outlet}}
+
+<div class="container">
+  {{outlet}}
+</div>
+
+<hr>
+
+<footer>
+  {{#link-to 'contact'}}Our representatives would love to help!{{/link-to}}
+</footer>

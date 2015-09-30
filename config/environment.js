@@ -4,6 +4,14 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'cake-blog',
     environment: environment,
+    contentSecurityPolicy: { 'default-src': "'none'",
+      'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com",
+      'font-src': "'self'",
+      'connect-src': "'self' wss://*.firebaseio.com",
+      'img-src': "'self' *",
+      'style-src': "'self' 'unsafe-inline'",
+      'frame-src': "'self' https://*.firebaseio.com" },
+    firebase: 'https://cake-blog.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

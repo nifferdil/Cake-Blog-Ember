@@ -1,0 +1,17 @@
+body {
+  background-color: #ffffcc;
+}
+
+footer {
+  padding: 10px;
+}
+
+.nav nav-pills {
+  padding: 0px;
+}
+
+.jumbotron {
+  background-color: lightpink;
+  color: #402603;
+  font-family: 'Indie Flower', cursive;
+}

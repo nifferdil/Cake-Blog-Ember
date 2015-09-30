@@ -1,0 +1,17 @@
+{ "cakes": [{
+  "name": "Fall season cake",
+  "flavor": "vanillla",
+  "frosting": "buttercream",
+  "image": "/img/cake-1.jpeg"
+},  {
+  "name": "Lego cake",
+  "flavor": "chocolate",
+  "frosting": "whipped cream",
+  "image": "/img/cake-3.jpeg"
+}, {
+  "name": "Princess cake",
+  "flavor": "strawberrry",
+  "frosting": "marzipan",
+  "image": "/img/cake-2.jpeg"
+  }]
+}
