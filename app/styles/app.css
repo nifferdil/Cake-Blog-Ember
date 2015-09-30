@@ -1,5 +1,6 @@
 body {
   background-color: #ffffcc;
+  color: #402603;
 }
 
 footer {
@@ -10,8 +11,24 @@ footer {
   padding: 0px;
 }
 
+.navbar {
+  padding-right: 15px;
+}
+
+img {
+  width: 180px;
+  height: 220px;
+  border: 2px solid lightpink;
+  display: inline-block;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .jumbotron {
   background-color: lightpink;
   color: #402603;
   font-family: 'Indie Flower', cursive;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 0px;
 }

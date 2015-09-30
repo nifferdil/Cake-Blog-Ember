@@ -1,10 +1,12 @@
 <header class = "jumbotron">
-  <h1 class="text-center">Cake Blog</h1>
-  <ul class="nav nav-pills">
-    <li role="presentation" class="active"><a href="#">Home</a></li>
-    <li role="presentation"><a href="#">About</a></li>
-    <li role="presentation"><a href="#">Contact Us</a></li>
+  <div class="navbar">
+  <h1 class="text-left">Cake Blog</h1>
+  <ul class="nav nav-pills navbar-right">
+    <li role="presentation" class="active"><a href="/">Home</a></li>
+    <li role="presentation"><a href="http://localhost:4200/about">About</a></li>
+    <li role="presentation"><a href="http://localhost:4200/contact">Contact Us</a></li>
   </ul>
+</div>
 </header>
 
 
@@ -15,5 +17,5 @@
 <hr>
 
 <footer>
-  {{#link-to 'contact'}}Our representatives would love to help!{{/link-to}}
+  {{#link-to 'contact'}}Our cakes are amazing! Contact us with questions{{/link-to}}
 </footer>

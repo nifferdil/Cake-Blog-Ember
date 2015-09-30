@@ -1,9 +1,8 @@
-<div class="container text-center">
-{{cake.name}} {{cake.flavor}} {{cake.frosting}}
-
+<div class="text-center">
+{{#link-to 'cake' cake.id}}{{cake.name}}{{/link-to}}
 <p>
   <img src={{cake.image}} alt={{cake.name}}>
 </p>
 {{update-cake cake=cake update="update"}}
-<button {{action 'delete' cake}}>Delete</button>
+
 </div>

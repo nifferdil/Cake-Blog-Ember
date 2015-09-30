@@ -3,23 +3,28 @@
 <div>
   <form>
     <div class="form-group">
-      <label for="name">Name</label>
-      {{input value=name id="name"}}
+      <label for="username">User Name:</label>
+      {{input value=username id="username" required=""}}
     </div>
 
     <div class="form-group">
-      <label for="flavor">Flavor</label>
-      {{input value=flavor id="flavor"}}
+      <label for="name">Name:</label>
+      {{input value=name id="name" required=""}}
     </div>
 
     <div class="form-group">
-      <label for="frosting">Frosting</label>
-      {{input value=frosting id="frosting"}}
+      <label for="flavor">Flavor:</label>
+      {{input value=flavor id="flavor" required=""}}
     </div>
 
     <div class="form-group">
-      <label for="image">Image Url</label>
-      {{input value=image id="image"}}
+      <label for="frosting">Frosting:</label>
+      {{input value=frosting id="frosting" required=""}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image Url:</label>
+      {{input value=image id="image" required=""}}
     </div>
 
     <button {{action 'save1'}}>Save</button>

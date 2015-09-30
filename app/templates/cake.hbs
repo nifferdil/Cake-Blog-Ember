@@ -1,0 +1,14 @@
+
+<div class="text-center">
+
+
+<h2 >More information about {{model.name}}</h2>
+
+Flavor: {{model.flavor}} <br>
+Frosting: {{model.frosting}} <br>
+
+{{cake-detail cake=model}}
+
+{{update-cake cake=model update="update"}}
+<button {{action 'delete' cake}}>Delete</button>
+</div>
