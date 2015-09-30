@@ -1,7 +1,7 @@
 <div class="text-center">
 {{#link-to 'cake' cake.id}}{{cake.name}}{{/link-to}}
 <p>
-  <img src={{cake.image}} alt={{cake.name}}>
+  {{#link-to 'cake' cake.id}}<img src={{cake.image}} alt={{cake.name}}>{{/link-to}}
 </p>
 {{update-cake cake=cake update="update"}}
 
