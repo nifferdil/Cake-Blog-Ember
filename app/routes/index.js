@@ -10,6 +10,6 @@ export default Ember.Route.extend({
       var newCake = this.store.createRecord('cake', params);
       newCake.save();
       this.transitionTo('index');
-    },
+    }
   }
 });

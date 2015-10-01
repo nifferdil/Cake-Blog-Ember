@@ -13,3 +13,19 @@ Frosting: {{model.frosting}} <br>
 <!-- <button {{action 'updateCakeForm'}}>Update</button><br> -->
 <button {{action 'delete' model}}>Delete</button>
 </div>
+
+<div id="loop">
+  <h2>Comments:</h2>
+
+  <ul>
+    {{#each model.comments as |comment|}}
+      <li>{{comment.username}}: {{comment.comment}}</li>
+    {{/each}}
+  </ul>
+
+  {{new-comment saveComment="saveComment" cake=model}}
+
+  <hr>
+
+
+</div>
