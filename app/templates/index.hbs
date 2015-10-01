@@ -7,7 +7,7 @@ We hope you find exactly what you're looking for in a cake.
 <div class="row">
   {{#each model as |cake|}}
     <div class="col-md-4">
-      {{cake-page cake=cake update="update" destroyCake="destroyCake"}}
+      {{cake-page cake=cake updateCake="updateCake" destroyCake="destroyCake"}}
     </div>
   {{/each}}
 </div>
@@ -16,5 +16,5 @@ We hope you find exactly what you're looking for in a cake.
 
   {{new-cake save2="save3"}}
 
-{{#link-to 'about'}}About{{/link-to}}<br>
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+<!-- {{#link-to 'about'}}About{{/link-to}}<br>
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}} -->

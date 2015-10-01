@@ -19,6 +19,18 @@ export default Ember.Component.extend({
 
       this.set('addNewCake', false),
       this.sendAction('save2', params);
+    },
+
+    update1() {
+      var params = {
+        name: this.get('name'),
+        flavor: this.get('flavor'),
+        frosting: this.get('frosting'),
+        image: this.get('image'),
+      };
+
+      // this.set('updateCakeForm', false);
+      this.sendAction('update2', cake, params);
     }
   }
 });

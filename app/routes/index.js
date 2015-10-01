@@ -11,20 +11,5 @@ export default Ember.Route.extend({
       newCake.save();
       this.transitionTo('index');
     },
-
-    update(cake, params) {
-     Object.keys(params).forEach(function(key){
-       if(params[key]!==undefined) {
-         cake.set(key,params[key]);
-       }
-     });
-     cake.save();
-     this.transitionTo('index');
-   },
-
-    destroyCake(cake) {
-      cake.destroyRecord();
-      this.transitionTo('index');
-    }
   }
 });

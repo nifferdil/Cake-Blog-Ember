@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     updateCakeForm() {
       this.set('updateCakeForm', true);
     },
-    
+
     update(cake) {
       var params = {
         name: this.get('name'),
@@ -16,7 +16,7 @@ export default Ember.Component.extend({
       };
 
       this.set('updateCakeForm', false);
-      this.sendAction('update', cake, params);
+      this.sendAction('updateCake', cake, params);
     }
   }
 });

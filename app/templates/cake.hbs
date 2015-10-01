@@ -2,13 +2,14 @@
 <div class="text-center">
 
 
-<h2 >More information about {{model.name}}</h2>
+<h2>More information about {{model.name}}</h2>
 
 Flavor: {{model.flavor}} <br>
 Frosting: {{model.frosting}} <br>
 
-{{cake-detail cake=model}}
+{{update-cake cake=model updateCake="updateCake"}}
+<p><img src={{model.image}} alt={{model.name}}></p>
 
-{{update-cake cake=model update="update"}}
-<button {{action 'delete' cake}}>Delete</button>
+<!-- <button {{action 'updateCakeForm'}}>Update</button><br> -->
+<button {{action 'delete' model}}>Delete</button>
 </div>
